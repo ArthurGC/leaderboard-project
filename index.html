@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LeaderBoard webpage using an API" />
+    <meta name="keywords" content="ArthurGC, LeaderBoard, project, Microverse" />
+    <meta name="author" content="Arthur Guzman" />
+    <title>LeaderBoard | ArthurGC</title>
+<script defer src="bundle.js"></script></head>
+
+<body>
+    <main>
+        <h1 class="title">Leaderboard</h1>
+        <section class="content">
+            <article class="left">
+                <div class="head">
+                    <h2 class="subtitle-left">Recent scores</h2>
+                    <button class="refresh">Refresh</button>
+                </div>
+                <ul class="score-list">
+
+                </ul>
+            </article>
+            <article class="right">
+                <h2 class="subtitle-right">Add your score</h2>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" placeholder="Your name" />
+                        </li>
+                        <li>
+                            <label for="score">Score:</label>
+                            <input type="text" id="score" name="user_score" placeholder="Your score" />
+                        </li>
+                        <li>
+                            <button type="submit" class="submit">Submit</button>
+                        </li>
+                    </ul>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
