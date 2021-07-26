@@ -1,15 +1,70 @@
 @use '../utilities' as *;
 
-header {
-  background: $clr-background-blue;
 
-  nav {
-    padding: calc(1rem + 0.8vw) calc(1.5rem + 4.5vw);
+.title {
+  @include muli-text(24px, 500, 32px, 0.7);
+  padding: calc(1rem + 0.8vw) calc(1.5rem + 4.5vw);
+}
 
-    a {
-      @include muli-text(24px, 500, 32px, 0.5);
+.content {
+  padding: calc(1rem + 0.8vw) calc(1.5rem + 4.5vw);
+  @include flex(row, flex-start, space-around);
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin-inline: auto;
+  gap: 3rem;
 
-      color: $clr-primary-white;
+  .left {
+    .head {
+      @include flex(row, center,space-between);
+      gap: 1rem;
+      .subtitle {
+        @include muli-text(20px, 500, 32px);
+      }
+
+      button {
+        @include muli-text(14px, 500, 32px);
+        padding: 0 .8rem;
+      }
+    }
+
+    .score-list {
+      min-height: 200px;
+      border: 3px solid $clr-primary-black;
+      margin-top: calc(1rem + .1vh);
+    }
+  }
+
+  .right {
+    .subtitle {
+      @include muli-text(20px, 500, 32px);
+    }
+
+    form {
+      margin: calc(1rem + .1vh) 0;
+      ul {
+        li {
+          margin: calc(.5rem + .1vh) 0;
+          label {
+            margin: calc(.3rem + .1vh) 0;
+            @include muli-text(14px, 500, 24px);
+          }
+
+          input {
+            @include muli-text(14px, 500, 32px);
+            width: 100%;
+            padding: 0 .5rem;
+          }
+
+          button {
+            @include muli-text(14px, 500, 32px);
+            padding: 0 .8rem;
+            float: right;
+          }
+        }
+      }
     }
   }
 }
+
+
