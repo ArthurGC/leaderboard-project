@@ -1,0 +1,78 @@
+@use '../utilities' as *;
+
+.title {
+  @include muli-text(24px, 500, 32px, 0.7);
+
+  padding: calc(1rem + 0.8vw) calc(1.5rem + 4.5vw);
+}
+
+.content {
+  padding: calc(1rem + 0.8vw) calc(1.5rem + 4.5vw);
+
+  @include flex(row, flex-start, space-around);
+
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin-inline: auto;
+  gap: 3rem;
+
+  .left {
+    .head {
+      @include flex(row, center,space-between);
+
+      gap: 1rem;
+
+      .subtitle-left {
+        @include muli-text(20px, 500, 32px);
+      }
+
+      .refresh {
+        @include muli-text(14px, 500, 32px);
+
+        padding: 0 0.8rem;
+      }
+    }
+
+    .score-list {
+      min-height: 200px;
+      border: 3px solid $clr-primary-black;
+      margin-top: calc(1rem + 0.1vh);
+    }
+  }
+
+  .right {
+    .subtitle-right {
+      @include muli-text(20px, 500, 32px);
+    }
+
+    form {
+      margin: calc(1rem + 0.1vh) 0;
+
+      ul {
+        li {
+          margin: calc(0.5rem + 0.1vh) 0;
+
+          label {
+            margin: calc(0.3rem + 0.1vh) 0;
+
+            @include muli-text(14px, 500, 24px);
+          }
+
+          input {
+            @include muli-text(14px, 500, 32px);
+
+            width: 100%;
+            padding: 0 0.5rem;
+          }
+
+          .submit {
+            @include muli-text(14px, 500, 32px);
+
+            padding: 0 0.8rem;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
