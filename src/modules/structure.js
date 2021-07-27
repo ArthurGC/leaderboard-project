@@ -1,4 +1,4 @@
-export let plainHTML = `
+export const plainHTML = `
 <h1 class="title">Leaderboard</h1>
 <section class="content">
     <article class="left">

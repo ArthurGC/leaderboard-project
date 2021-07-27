@@ -1,8 +1,8 @@
-import { plainHTML } from './modules/structure';
+import { plainHTML } from './modules/structure.js';
 import './styles.scss';
 
-let root = document.querySelector('#root');
+const root = document.querySelector('#root');
 
 document.addEventListener('DOMContentLoaded', () => {
-    root.insertAdjacentHTML('beforeend', plainHTML);
-})
+  root.insertAdjacentHTML('beforeend', plainHTML);
+});
