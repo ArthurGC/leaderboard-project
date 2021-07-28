@@ -19,3 +19,19 @@ export async function createGame () {
     const game = await response.json();
     return game;
 }
+
+let table = document.querySelector('.table');
+
+export const createTable = (array) => {
+    table.innerHTML = '';
+    array.forEach(score => {
+        let container = document.createElement('tr');
+        let nameContainer = document.createElement('td');
+        let scoreContainer = document.createElement('td');
+        nameContainer.textContent = score.user;
+        scoreContainer.textContent = score.score;
+        container.appendChild(nameContainer);
+        container.appendChild(scoreContainer);
+        table.appendChild(container);
+    });
+}
