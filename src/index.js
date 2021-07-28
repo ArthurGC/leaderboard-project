@@ -12,6 +12,7 @@ submit.addEventListener('click', (e) => {
     const scores = sortScores(listScore);
     createTable(scores);
   });
+  document.getElementById("form").reset();
 });
 
 refresh.addEventListener('click', () => {
