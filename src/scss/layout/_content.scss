@@ -41,11 +41,13 @@
       .table {
         border-collapse: collapse;
         width: 100%;
+
         tr:first-child {
           background: chartreuse;
         }
 
-        td, th {
+        td,
+        th {
           text-align: center;
           border: 1px solid #ddd;
           padding: 8px 0;

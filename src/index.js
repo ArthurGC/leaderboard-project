@@ -9,14 +9,14 @@ submit.addEventListener('click', (e) => {
   e.preventDefault();
   addScore();
   getScores().then((listScore) => {
-    let scores = sortScores(listScore);
+    const scores = sortScores(listScore);
     createTable(scores);
   });
 });
 
 refresh.addEventListener('click', () => {
   getScores().then((listScore) => {
-    let scores = sortScores(listScore);
+    const scores = sortScores(listScore);
     createTable(scores);
   });
 });

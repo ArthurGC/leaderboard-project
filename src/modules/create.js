@@ -36,6 +36,4 @@ export const createTable = (array) => {
   });
 };
 
-export const sortScores = (array) => {
-  return array.sort((a,b) => b.score - a.score);
-}
+export const sortScores = (array) => array.sort((a, b) => b.score - a.score);
