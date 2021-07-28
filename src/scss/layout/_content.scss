@@ -37,6 +37,20 @@
       min-height: 200px;
       border: 3px solid $clr-primary-black;
       margin-top: calc(1rem + 0.1vh);
+
+      .table {
+        border-collapse: collapse;
+        width: 100%;
+        tr:first-child {
+          background: chartreuse;
+        }
+
+        td, th {
+          text-align: center;
+          border: 1px solid #ddd;
+          padding: 8px 0;
+        }
+      }
     }
   }
 

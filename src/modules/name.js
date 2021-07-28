@@ -1,3 +1,3 @@
-export const name = { 
-	name: "Arthur's game"
-}
+export const name = {
+  name: "Arthur's game",
+};
