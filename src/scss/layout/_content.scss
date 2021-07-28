@@ -106,6 +106,7 @@ body {
 
           input {
             @include muli-text(14px, 500, 32px);
+
             border: 2px solid $clr-primary-white;
             background: none;
             color: $clr-primary-white;
@@ -117,6 +118,7 @@ body {
             margin-top: 10px;
 
             @include muli-text(14px, 500, 32px);
+
             box-shadow: 0 0 5px $clr-primary-blue, 0 0 10px $clr-primary-blue, 0 0 20px $clr-primary-blue, inset 0 0 15px $clr-primary-blue;
             border: 2px solid $clr-primary-white;
             border-radius: 7px;
