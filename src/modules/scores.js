@@ -10,11 +10,11 @@ export const getScores = async () => {
 
   const scores = await response.json();
   return scores.result;
-}
+};
 
 export const addScore = async () => {
-  let name = document.querySelector('#name').value;
-  let score = document.querySelector('#score').value;
+  const name = document.querySelector('#name').value;
+  const score = document.querySelector('#score').value;
   const newScore = {
     user: name,
     score: parseInt(score, 10),
@@ -30,4 +30,4 @@ export const addScore = async () => {
 
   const status = await response.json();
   return status;
-}
+};

@@ -18,7 +18,7 @@ export const createGame = async () => {
 
   const game = await response.json();
   return game;
-}
+};
 
 const table = document.querySelector('.table');
 
