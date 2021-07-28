@@ -34,13 +34,14 @@ body {
         @include muli-text(20px, 500, 32px);
 
         color: $clr-primary-white;
-        text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+        text-shadow: 0 0 5px $clr-primary-blue, 0 0 15px $clr-primary-blue, 0 0 30px $clr-primary-blue, 0 0 50px $clr-primary-blue;
       }
 
       .refresh {
         @include muli-text(14px, 500, 32px);
 
-        border: 2px solid rgb(91, 151, 31);
+        box-shadow: 0 0 5px $clr-primary-blue, 0 0 10px $clr-primary-blue, 0 0 20px $clr-primary-blue, inset 0 0 15px $clr-primary-blue;
+        border: 2px solid $clr-primary-white;
         border-radius: 7px;
         background: none;
         color: $clr-primary-white;
@@ -54,15 +55,15 @@ body {
       max-height: 430px;
       overflow-y: auto;
       border: 2px solid $clr-primary-white;
-      box-shadow: 0 0 30px chartreuse, inset 0 0 20px chartreuse;
       margin-top: calc(1rem + 0.1vh);
+      border-radius: 10px;
 
       .table {
         border-collapse: collapse;
         width: 100%;
 
         .table-title {
-          background: chartreuse;
+          background: $clr-primary-blue;
           color: $clr-primary-black;
         }
 
@@ -84,7 +85,7 @@ body {
       @include muli-text(20px, 500, 32px);
 
       color: $clr-primary-white;
-      text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+      text-shadow: 0 0 5px $clr-primary-blue, 0 0 15px $clr-primary-blue, 0 0 30px $clr-primary-blue, 0 0 50px $clr-primary-blue;
     }
 
     form {
@@ -100,14 +101,12 @@ body {
 
             @include muli-text(14px, 500, 24px);
 
-            text-shadow: 0 0 5px red, 0 0 15px red, 0 0 25px red, 0 0 40px red;
+            text-shadow: 0 0 5px $clr-primary-blue, 0 0 15px $clr-primary-blue, 0 0 30px $clr-primary-blue, 0 0 50px $clr-primary-blue;
           }
 
           input {
             @include muli-text(14px, 500, 32px);
-
-            box-shadow: 0 0 10px chartreuse, 0 0 20px chartreuse;
-            border: 1px solid $clr-primary-white;
+            border: 2px solid $clr-primary-white;
             background: none;
             color: $clr-primary-white;
             width: 100%;
@@ -118,8 +117,8 @@ body {
             margin-top: 10px;
 
             @include muli-text(14px, 500, 32px);
-
-            border: 2px solid rgb(91, 151, 31);
+            box-shadow: 0 0 5px $clr-primary-blue, 0 0 10px $clr-primary-blue, 0 0 20px $clr-primary-blue, inset 0 0 15px $clr-primary-blue;
+            border: 2px solid $clr-primary-white;
             border-radius: 7px;
             background: none;
             color: $clr-primary-white;

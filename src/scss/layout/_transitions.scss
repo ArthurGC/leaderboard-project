@@ -5,13 +5,13 @@
 }
 
 .score-list::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 10px rgb(255, 2, 2);
+  -webkit-box-shadow: inset 0 0 10px #111;
   border-radius: 10px;
 }
 
 .score-list::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(255, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 30px chartreuse;;
 }
 
 input::-webkit-outer-spin-button,
@@ -21,9 +21,7 @@ input::-webkit-inner-spin-button {
 
 @keyframes neon1 {
   to {
-    color: $clr-primary-black;
-    background: rgb(101, 192, 10);
-    box-shadow: 0 0 10px chartreuse, 0 0 40px chartreuse, 0 0 80px chartreuse;
+    box-shadow: 0 0 5px chartreuse, 0 0 10px chartreuse, 0 0 20px chartreuse, inset 0 0 15px chartreuse;
   }
 }
 
