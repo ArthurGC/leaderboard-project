@@ -2,7 +2,7 @@ import { name } from './name.js';
 
 const gameURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 
-export async function createGame() {
+export const createGame = async () => {
   const response = await fetch(gameURL, {
     method: 'POST',
     headers: {

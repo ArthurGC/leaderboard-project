@@ -1,6 +1,6 @@
 const scoreURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/tvIs41iLCOTgjlAGQnjJ/scores/';
 
-export async function getScores() {
+export const getScores = async () => {
   const response = await fetch(scoreURL);
 
   if (!response.ok) {
@@ -12,7 +12,7 @@ export async function getScores() {
   return scores.result;
 }
 
-export async function addScore() {
+export const addScore = async () => {
   let name = document.querySelector('#name').value;
   let score = document.querySelector('#score').value;
   const newScore = {
@@ -27,8 +27,6 @@ export async function addScore() {
     },
     body: JSON.stringify(newScore),
   });
-  name = '';
-  score = '';
 
   const status = await response.json();
   return status;
