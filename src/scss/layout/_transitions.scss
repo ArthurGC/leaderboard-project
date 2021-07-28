@@ -18,6 +18,7 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
 @keyframes neon1 {
   to {
     color: $clr-primary-black;
@@ -25,6 +26,7 @@ input::-webkit-inner-spin-button {
     box-shadow: 0 0 10px chartreuse, 0 0 40px chartreuse, 0 0 80px chartreuse;
   }
 }
+
 .submit:hover {
   animation: neon1 0.8s forwards;
 }
