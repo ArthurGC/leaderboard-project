@@ -21,11 +21,17 @@
                     <button class="refresh">Refresh</button>
                 </div>
                 <ul class="score-list">
+                    <table class="table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Score</th>
+                        </tr>
+                    </table>
                 </ul>
             </article>
             <article class="right">
                 <h2 class="subtitle-right">Add your score</h2>
-                <form>
+                <form id="form">
                     <ul>
                         <li>
                             <label for="name">Name:</label>
@@ -33,7 +39,7 @@
                         </li>
                         <li>
                             <label for="score">Score:</label>
-                            <input type="text" id="score" name="user_score" placeholder="Your score" />
+                            <input type="number" id="score" name="user_score" placeholder="Your score" />
                         </li>
                         <li>
                             <button type="submit" class="submit">Submit</button>

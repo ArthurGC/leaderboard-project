@@ -13,6 +13,9 @@ module.exports = {
 
   devServer: {
     contentBase: './dist',
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
   },
 
   module: {
