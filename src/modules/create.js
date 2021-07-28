@@ -23,7 +23,7 @@ export const createGame = async () => {
 const table = document.querySelector('.table');
 
 export const createTable = (array) => {
-  table.innerHTML = '<tr><th>Name</th><th>Score</th></tr>';
+  table.innerHTML = '<tr class="table-title"><th class="table-title">Name</th><th class="table-title">Score</th></tr>';
   array.forEach((score) => {
     const container = document.createElement('tr');
     const nameContainer = document.createElement('td');

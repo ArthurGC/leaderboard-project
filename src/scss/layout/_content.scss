@@ -1,9 +1,14 @@
 @use '../utilities' as *;
 
+body {
+  background: $clr-primary-black;
+}
 .title {
   @include muli-text(24px, 500, 32px, 0.7);
 
   padding: calc(1rem + 0.8vw) calc(1.5rem + 4.5vw);
+  color: $clr-primary-white;
+  text-shadow: 0 0 5px chartreuse, 0 0 15px chartreuse, 0 0 30px chartreuse, 0 0 50px chartreuse;
 }
 
 .content {
@@ -17,6 +22,7 @@
   gap: 3rem;
 
   .left {
+    margin-inline: auto;
     .head {
       @include flex(row, center,space-between);
 
@@ -24,41 +30,55 @@
 
       .subtitle-left {
         @include muli-text(20px, 500, 32px);
+        color: $clr-primary-white;
+        text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
       }
 
       .refresh {
         @include muli-text(14px, 500, 32px);
-
+        border: 2px solid rgb(91, 151, 31);
+        border-radius: 7px;
+        background: none;
+        color: $clr-primary-white;
         padding: 0 0.8rem;
+        cursor: pointer;
       }
     }
 
     .score-list {
       min-height: 200px;
-      border: 3px solid $clr-primary-black;
+      max-height: 430px;
+      overflow-y: auto;
+      border: 2px solid $clr-primary-white;
+      box-shadow: 0 0 30px chartreuse, inset 0 0 20px chartreuse;
       margin-top: calc(1rem + 0.1vh);
 
       .table {
         border-collapse: collapse;
         width: 100%;
 
-        tr:first-child {
+        .table-title {
           background: chartreuse;
+          color: $clr-primary-black;
         }
 
         td,
         th {
           text-align: center;
-          border: 1px solid #ddd;
+          border: 1px solid rgb(119, 116, 116);
           padding: 8px 0;
+          color: $clr-primary-white;
         }
       }
     }
   }
 
   .right {
+    margin-inline: auto;
     .subtitle-right {
       @include muli-text(20px, 500, 32px);
+      color: $clr-primary-white;
+      text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
     }
 
     form {
@@ -70,25 +90,46 @@
 
           label {
             margin: calc(0.3rem + 0.1vh) 0;
-
+            color: $clr-primary-white;
             @include muli-text(14px, 500, 24px);
+            text-shadow: 0 0 5px red, 0 0 15px red, 0 0 25px red, 0 0 40px red;
           }
 
           input {
             @include muli-text(14px, 500, 32px);
-
+            box-shadow: 0 0 10px chartreuse, 0 0 20px chartreuse;
+            border: 1px solid $clr-primary-white;
+            background: none;
+            color: $clr-primary-white;
             width: 100%;
             padding: 0 0.5rem;
           }
 
           .submit {
+            margin-top: 10px;
             @include muli-text(14px, 500, 32px);
-
+            border: 2px solid rgb(91, 151, 31);
+            border-radius: 7px;
+            background: none;
+            color: $clr-primary-white;
             padding: 0 0.8rem;
             float: right;
+            cursor: pointer;
           }
         }
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .content {
+    margin: calc(2rem + 5vh) 0;
+    margin-inline: auto;
   }
 }
