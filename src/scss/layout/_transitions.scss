@@ -1,0 +1,34 @@
+@use '../utilities' as *;
+
+.score-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.score-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px #111;
+  border-radius: 10px;
+}
+
+.score-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 30px chartreuse;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+@keyframes neon1 {
+  to {
+    box-shadow: 0 0 5px chartreuse, 0 0 10px chartreuse, 0 0 20px chartreuse, inset 0 0 15px chartreuse;
+  }
+}
+
+.submit:hover {
+  animation: neon1 0.8s forwards;
+}
+
+.refresh:hover {
+  animation: neon1 0.8s forwards;
+}
